@@ -15,5 +15,7 @@ var compiledResult = sass.renderSync({data: colorStr + fileDataBUff.toString()})
 fs.writeFile(filePathOut, compiledResult.css, function (err) {
     if (err) {
         console.error(err);
+    } else {
+        console.log('done!');
     }
 });
